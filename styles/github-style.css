@@ -1,0 +1,63 @@
+/* styles/github-style.css */
+
+body {
+  background-color: #f6f8fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #0366d6;
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+pre, code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+pre:hover, code:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #28a745;
+  background-color: #e6ffed;
+  border-radius: 3px;
+  color: #24292e;
+}
+
+.spoiler details {
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.spoiler summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #0366d6;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
