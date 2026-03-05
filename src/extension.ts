@@ -7,8 +7,6 @@ export function activate(context: vscode.ExtensionContext) {
     return {
         extendMarkdownIt(md: any) {
             console.log('extendMarkdownIt вызван!');
-
-            // --- Блок :::alert ---
             md.use(markdownItContainer, 'alert', {
                 validate: (params: string) => {
                     return params.trim().match(/^alert\s*(.*)$/);
@@ -24,7 +22,6 @@ export function activate(context: vscode.ExtensionContext) {
                 }
             });
 
-            // --- Блок ???spoiler ---
             md.use(markdownItContainer, 'spoiler', {
                 marker: '?',
                 validate: (params: string) => {

@@ -1,5 +1,3 @@
-// scripts/preview.js
-
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.spoiler details').forEach(details => {
     details.addEventListener('toggle', () => {
